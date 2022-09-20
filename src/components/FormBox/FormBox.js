@@ -21,11 +21,11 @@ const FormBox = (props) => {
 
   useEffect(() => {
     return async () => {
-      const notes = await getOneNote(props.id);
-      setNote(notes);
-      formik.setFieldValue('title', notes.title);
-      formik.setFieldValue('tag', notes.tag);
-      formik.setFieldValue('body', notes.body);
+      const note = await getOneNote(props.id);
+      setNote(note);
+      formik.setFieldValue('title', note.title);
+      formik.setFieldValue('tag', note.tag);
+      formik.setFieldValue('body', note.body);
     };
   }, [props.id]);
 
@@ -46,6 +46,8 @@ const FormBox = (props) => {
         ...formik.values,
         isPinned: false,
       });
+
+    props.closeHandler();
   };
   const handleTitle = (e) => {
     formik.setFieldValue('title', e.target.value);
@@ -67,21 +69,23 @@ const FormBox = (props) => {
           <input
             className={classes.main__form__input}
             type="text"
-            placeholder="Title goes here"
+            placeholder="Title "
             value={formik.values.title}
             onChange={handleTitle}
           />
           <input
             className={classes.main__form__input}
             type="tag"
-            placeholder="TagLine goes here"
+            placeholder="Tag line"
             value={formik.values.tag}
             onChange={handleTag}
           />
-          <input
+          <textarea
+            rows="5"
+            cols="40"
             className={classes.main__form__input}
             type="body"
-            placeholder="Body goes here"
+            placeholder="Body"
             value={formik.values.body}
             onChange={handleBody}
           />

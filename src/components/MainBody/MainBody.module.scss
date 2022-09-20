@@ -1,9 +1,12 @@
 .main {
   justify-content: center;
   width: 85vw;
-  margin: 5rem auto;
+  margin: 5rem auto 0 auto;
   padding: 2rem;
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
-  }
+}
+.footer {
+  text-align: center;
+}
