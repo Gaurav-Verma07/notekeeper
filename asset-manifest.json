@@ -1,22 +1,16 @@
 {
   "files": {
-    "main.css": "/Gaurav-Verma07/notekeeper/static/css/main.14c1573f.css",
-    "main.js": "/Gaurav-Verma07/notekeeper/static/js/main.2c65da23.js",
-    "static/css/249.6675353c.chunk.css": "/Gaurav-Verma07/notekeeper/static/css/249.6675353c.chunk.css",
-    "static/js/249.fa675cba.chunk.js": "/Gaurav-Verma07/notekeeper/static/js/249.fa675cba.chunk.js",
+    "main.css": "/Gaurav-Verma07/notekeeper/static/css/main.ce1fdeb0.css",
+    "main.js": "/Gaurav-Verma07/notekeeper/static/js/main.41c24032.js",
     "static/js/787.7025e0fa.chunk.js": "/Gaurav-Verma07/notekeeper/static/js/787.7025e0fa.chunk.js",
-    "static/js/268.5f12d1ef.chunk.js": "/Gaurav-Verma07/notekeeper/static/js/268.5f12d1ef.chunk.js",
     "static/media/backdrop.png": "/Gaurav-Verma07/notekeeper/static/media/backdrop.8749c79fcb12e36635d8.png",
     "index.html": "/Gaurav-Verma07/notekeeper/index.html",
-    "main.14c1573f.css.map": "/Gaurav-Verma07/notekeeper/static/css/main.14c1573f.css.map",
-    "main.2c65da23.js.map": "/Gaurav-Verma07/notekeeper/static/js/main.2c65da23.js.map",
-    "249.6675353c.chunk.css.map": "/Gaurav-Verma07/notekeeper/static/css/249.6675353c.chunk.css.map",
-    "249.fa675cba.chunk.js.map": "/Gaurav-Verma07/notekeeper/static/js/249.fa675cba.chunk.js.map",
-    "787.7025e0fa.chunk.js.map": "/Gaurav-Verma07/notekeeper/static/js/787.7025e0fa.chunk.js.map",
-    "268.5f12d1ef.chunk.js.map": "/Gaurav-Verma07/notekeeper/static/js/268.5f12d1ef.chunk.js.map"
+    "main.ce1fdeb0.css.map": "/Gaurav-Verma07/notekeeper/static/css/main.ce1fdeb0.css.map",
+    "main.41c24032.js.map": "/Gaurav-Verma07/notekeeper/static/js/main.41c24032.js.map",
+    "787.7025e0fa.chunk.js.map": "/Gaurav-Verma07/notekeeper/static/js/787.7025e0fa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14c1573f.css",
-    "static/js/main.2c65da23.js"
+    "static/css/main.ce1fdeb0.css",
+    "static/js/main.41c24032.js"
   ]
 }
