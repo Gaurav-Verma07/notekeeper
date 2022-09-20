@@ -1,0 +1,21 @@
+.options {
+  position: absolute;
+  //   background-color: rgba(128, 0, 128, 1);
+  color: #fff;
+  border-radius: 5rem;
+  padding: 0.5rem;
+  right: -1rem;
+  top: -1rem;
+
+  &__edit {
+    cursor: pointer;
+  }
+  &__delete {
+    cursor: pointer;
+    padding: 0.5rem 0;
+  }
+  &__pin {
+    cursor: pointer;
+    transform: rotate(40deg);
+  }
+}

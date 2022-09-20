@@ -1,0 +1,66 @@
+/* html {
+    These styles will be the base for all of the stylesheets
+    throughtout the codebase
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+
+  /* 1rem: 10px */
+  font-size: 62.5%;
+}
+
+@media (max-width: 112.5em) {
+  html {
+    /* 1rem: 12px */
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    /* 1rem: 10px */
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    /* 1rem: 8px */
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    /* 1rem: 5px */
+    font-size: 31.25%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #E5E7EB;
+  background:url("./backdrop.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
