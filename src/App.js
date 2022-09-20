@@ -1,15 +1,16 @@
-import './base.css';
-import backdrop from './backdrop.png';
 import Header from './components/Header/Header';
 import MainBody from './components/MainBody/MainBody';
+import NoteProvider from './store/NoteProvider';
+import './base.css';
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <MainBody />
-      {/* <img src={backdrop} className="App-logo" alt="logo" /> */}
-    </div>
+    <NoteProvider>
+      <div className="App">
+        <Header />
+        <MainBody />
+      </div>
+    </NoteProvider>
   );
 };
 

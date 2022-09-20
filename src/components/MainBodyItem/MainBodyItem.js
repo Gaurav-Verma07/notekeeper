@@ -1,13 +1,14 @@
 import PushPinIcon from '@mui/icons-material/PushPin';
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteIcon from '@mui/icons-material/Delete';
-import ZoomInIcon from '@mui/icons-material/ZoomIn';
 import classes from './MainBodyItem.module.scss';
 import { useState } from 'react';
-import { Box, OptionBox } from './styled-box';
+import { Box } from './styled-box';
 import Options from '../Options/Options';
+
 const MainBodyItem = (props) => {
   const [isHover, setIsHover] = useState(false);
+  const closeOptionBox = () => {
+    setIsHover(false);
+  };
 
   return (
     <Box
@@ -21,12 +22,15 @@ const MainBodyItem = (props) => {
       }}
     >
       <div className={classes.block__pinned}>
-        <PushPinIcon fontSize="large" color="primary" />
+        {props.content.isPinned && <PushPinIcon fontSize="large" color="primary" />}
       </div>
-      {isHover && <Options bColor={props.color} />}{' '}
+      {isHover && (
+        <Options bColor={props.color} id={props.id} closeOptionBox={closeOptionBox} isPinned={props.content.isPinned} />
+      )}
       <div className={classes.block_body}>
-        <h1 className={classes.block_body_heading}>Day One</h1>
-        <p className={classes.block_body_text}> {props.text}</p>
+        <h1 className={classes.block_body_heading}>{props.content.title}</h1>
+        <p className={classes.block_body_tagline}>{props.content.tag}</p>
+        <p className={classes.block_body_text}> {props.content.body}</p>
       </div>
     </Box>
   );

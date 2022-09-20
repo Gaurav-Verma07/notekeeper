@@ -1,7 +1,6 @@
 .block {
   position: relative;
   width: 20vw;
-//   flex: 1;
   height: fit-content;
   margin: 1rem;
   background-color: rgba(128, 0, 128, 0.33);
@@ -23,7 +22,6 @@
     padding: 0.5rem;
     right: -1rem;
     top: -1rem;
-    //   cursor: pointer;
   }
 
   &_body {
@@ -31,10 +29,14 @@
     &_heading {
       font-weight: 600;
       font-size: 2rem;
-      // font-style:capitaize;
-      padding: 1rem 0;
       text-transform: uppercase;
       color: rgba(0, 0, 0, 0.8);
+    }
+    &_tagline {
+      font-size: 1.3rem;
+      color: rgba(0, 0, 0, 0.6);
+      font-style: italic;
+      padding: 0.5rem 0;
     }
 
     &_text {
@@ -42,6 +44,7 @@
       color: rgba(0, 0, 0, 0.65);
       line-height: 2rem;
       word-spacing: 0.2rem;
+      padding: 0.5rem 0;
     }
   }
   &:hover {

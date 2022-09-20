@@ -7,5 +7,5 @@ export const OptionBox = styled.div`
 
 export const Box = styled.div`
   background-color: ${(props) => hexToRgba(props.bColor, '.7')};
+  data-aos: 'fade-up';
 `;
-
