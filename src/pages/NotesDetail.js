@@ -1,4 +1,4 @@
-import { Fragment, Suspense } from 'react';
+import { Suspense } from 'react';
 import { useParams, Outlet, useLocation } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import MainBody from '../components/MainBody/MainBody';
