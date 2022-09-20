@@ -1,5 +1,5 @@
-import { Fragment, Suspense,  } from 'react';
-import { useParams, Outlet,  useLocation } from 'react-router-dom';
+import { Fragment, Suspense } from 'react';
+import { useParams, Outlet, useLocation } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import MainBody from '../components/MainBody/MainBody';
 import Loading from '../components/Modal/Loading/Loading';
@@ -12,11 +12,13 @@ const NotesDetail = () => {
 
   console.log('from load comments= ', location.pathname);
   return (
-    <Suspense  fallback={
+    <Suspense
+      fallback={
         <div className="centered">
-          <Loading   />
+          <Loading />
         </div>
-      }>
+      }
+    >
       <Header />
       <MainBody />
       <Outlet />
