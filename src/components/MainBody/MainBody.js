@@ -10,10 +10,12 @@ const MainBody = () => {
   const [notes, setNotes] = useState([]);
 
   useEffect(() => {
-    return async () => {
+    const getNotes = async () => {
       const notes = await getAllNotes();
       setNotes(arrangeNotes(Object.entries(notes)));
+      console.log('This is the note ', notes);
     };
+    getNotes();
   }, []);
 
   return (
@@ -23,7 +25,7 @@ const MainBody = () => {
           <MainBodyItem key={index} id={note[0]} content={note[1]} color={getRandomColor()} />
         ))}
       </section>
-      <TurnPage/>
+      <TurnPage />
     </Fragment>
   );
 };
